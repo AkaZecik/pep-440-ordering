@@ -1,8 +1,0 @@
-FROM python:3.8-slim-buster
-
-ARG VERSION=1.10.2
-ENV VERSION="$VERSION"
-
-RUN pip install --find-links https://download.pytorch.org/whl/cpu/torch_stable.html torch=="$VERSION"
-
-CMD ["sh", "-c", "pip install -U torch==\"$VERSION\""]

@@ -1,4 +1,3 @@
-Run `./build1.sh` and `./build2.sh`.
-
-If you execute `./run1.sh`, then `torch` will get downloaded only once.
-If you execute `./run2.sh`, then `torch` will get downloaded twice.
+First, run `./build.sh`. Then execute:
+* `./run.sh ./script1.sh` - `torch` gets downloaded twice,
+* `./run.sh ./script2.sh` - `torch` gets downloaded once.
